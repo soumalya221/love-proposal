@@ -1,0 +1,424 @@
+.gallery-page{
+width:100%;
+text-align:center;
+z-index:20;
+padding:40px;
+}
+
+.gallery-page h1{
+color:white;
+font-size:45px;
+margin-bottom:40px;
+}
+
+.gallery{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:25px;
+max-width:1000px;
+margin:auto;
+}
+
+.card{
+background:white;
+padding:10px;
+border-radius:20px;
+transform:rotate(-3deg);
+box-shadow:0 15px 30px rgba(0,0,0,.25);
+}
+
+.card:nth-child(even){
+transform:rotate(3deg);
+}
+
+.card img{
+width:100%;
+height:280px;
+object-fit:cover;
+border-radius:15px;
+}
+
+.next-btn{
+margin-top:40px;
+padding:15px 40px;
+background:#ff006e;
+border:none;
+border-radius:50px;
+color:white;
+font-size:20px;
+cursor:pointer;
+transition:.3s;
+}
+
+.next-btn:hover{
+transform:scale(1.08);
+}
+.gallery-page{
+width:100%;
+padding:40px;
+text-align:center;
+z-index:10;
+}
+
+.gallery-page h1{
+
+font-size:55px;
+color:white;
+
+}
+
+.gallery-subtitle{
+
+margin:15px 0 40px;
+color:white;
+font-size:22px;
+
+}
+
+.gallery{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+
+gap:35px;
+
+max-width:1100px;
+
+margin:auto;
+
+}
+
+.card{
+
+background:white;
+
+padding:12px;
+
+border-radius:20px;
+
+box-shadow:0 15px 30px rgba(0,0,0,.25);
+
+transition:.4s;
+
+cursor:pointer;
+
+transform:rotate(-4deg);
+
+}
+
+.card:nth-child(even){
+
+transform:rotate(4deg);
+
+}
+
+.card img{
+
+width:100%;
+
+height:320px;
+
+object-fit:cover;
+
+border-radius:15px;
+
+}
+
+.card p{
+
+margin-top:12px;
+
+font-size:20px;
+
+font-weight:bold;
+
+color:#ff006e;
+
+}
+
+.card:hover{
+
+box-shadow:0 25px 60px rgba(0,0,0,.35);
+
+}
+.timeline-page{
+    width:100%;
+    padding:50px 20px;
+    text-align:center;
+    z-index:10;
+}
+
+.timeline-page h1{
+    color:white;
+    font-size:48px;
+    margin-bottom:40px;
+}
+
+.timeline{
+    max-width:900px;
+    margin:auto;
+}
+
+.timeline-card{
+    background:rgba(255,255,255,.9);
+    padding:25px;
+    border-radius:20px;
+    margin:30px 0;
+    box-shadow:0 15px 30px rgba(0,0,0,.2);
+}
+
+.timeline-card h2{
+    color:#ff006e;
+    margin-bottom:10px;
+}
+
+.timeline-card p{
+    font-size:18px;
+    line-height:1.6;
+}
+.proposal-page{
+    width:100%;
+    height:100vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+}
+
+.proposal-page h1{
+    font-size:60px;
+    color:white;
+}
+
+.proposal-text{
+    color:white;
+    font-size:24px;
+    margin:20px 0 50px;
+}
+
+.button-area{
+    position:relative;
+    width:100%;
+    height:220px;
+}
+
+.yes-btn{
+
+padding:18px 45px;
+
+font-size:22px;
+
+background:#ff006e;
+
+color:white;
+
+border:none;
+
+border-radius:50px;
+
+cursor:pointer;
+
+transition:.3s;
+
+}
+
+.yes-btn:hover{
+
+transform:scale(1.1);
+
+}
+
+.no-btn{
+
+padding:18px 45px;
+
+font-size:22px;
+
+background:#444;
+
+color:white;
+
+border:none;
+
+border-radius:50px;
+
+cursor:pointer;
+
+}
+
+.funny-message{
+
+margin-top:60px;
+
+color:white;
+
+font-size:30px;
+
+}
+.celebration-page{
+
+height:100vh;
+
+display:flex;
+
+flex-direction:column;
+
+justify-content:center;
+
+align-items:center;
+
+text-align:center;
+
+}
+
+.celebration-page h1{
+
+font-size:70px;
+
+color:white;
+
+}
+
+.celebration-page h2{
+
+margin-top:25px;
+
+font-size:35px;
+
+color:white;
+
+}
+
+.celebration-page p{
+
+margin-top:20px;
+
+font-size:22px;
+
+color:white;
+
+}
+
+.big-heart{
+
+font-size:120px;
+
+margin-top:50px;
+
+}
+.music-btn{
+
+position:fixed;
+
+top:20px;
+
+right:20px;
+
+z-index:999;
+
+padding:12px 20px;
+
+border:none;
+
+border-radius:30px;
+
+background:#ff006e;
+
+color:white;
+
+font-size:16px;
+
+cursor:pointer;
+
+box-shadow:0 5px 20px rgba(0,0,0,.3);
+
+transition:.3s;
+
+}
+
+.music-btn:hover{
+
+transform:scale(1.08);
+
+}
+.petals{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    overflow:hidden;
+    pointer-events:none;
+    z-index:1;
+}
+
+.petal{
+    position:absolute;
+    top:-60px;
+    font-size:30px;
+    animation:fall linear infinite;
+}
+
+@keyframes fall{
+
+0%{
+    transform:
+        translateY(-50px)
+        rotate(0deg);
+}
+
+100%{
+    transform:
+        translateY(120vh)
+        rotate(720deg);
+}
+
+}
+.stars{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+overflow:hidden;
+pointer-events:none;
+z-index:0;
+}
+
+.star{
+
+position:absolute;
+
+width:3px;
+
+height:3px;
+
+background:white;
+
+border-radius:50%;
+
+animation:twinkle 2s infinite;
+
+}
+
+@keyframes twinkle{
+
+0%,100%{
+
+opacity:.2;
+
+transform:scale(1);
+
+}
+
+50%{
+
+opacity:1;
+
+transform:scale(2);
+
+}
+
+}
